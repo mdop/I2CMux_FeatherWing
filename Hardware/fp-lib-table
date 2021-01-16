@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name JST_PH-SH)(type KiCad)(uri ${KIPRJMOD}/libraries/JST_PH-SH.pretty)(options "")(descr ""))
+)
