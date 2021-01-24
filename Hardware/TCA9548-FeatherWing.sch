@@ -1443,4 +1443,54 @@ Wire Wire Line
 	1950 2900 1950 2650
 Wire Wire Line
 	1950 2900 1950 3150
+Text GLabel 6200 1400 0    50   Input ~ 0
+SCL
+Text GLabel 6200 1550 0    50   Input ~ 0
+SDA
+$Comp
+L Device:R_Small R18
+U 1 1 600B170C
+P 6400 1400
+F 0 "R18" H 6459 1446 50  0000 L CNN
+F 1 "10k" H 6459 1355 50  0000 L CNN
+F 2 "digikey-footprints:0805" H 6400 1400 50  0001 C CNN
+F 3 "~" H 6400 1400 50  0001 C CNN
+	1    6400 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 600B1FAB
+P 6400 1550
+F 0 "R19" H 6459 1596 50  0000 L CNN
+F 1 "10k" H 6459 1505 50  0000 L CNN
+F 2 "digikey-footprints:0805" H 6400 1550 50  0001 C CNN
+F 3 "~" H 6400 1550 50  0001 C CNN
+	1    6400 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 600B2190
+P 6550 1300
+F 0 "#PWR0101" H 6550 1150 50  0001 C CNN
+F 1 "+3.3V" H 6565 1473 50  0000 C CNN
+F 2 "" H 6550 1300 50  0001 C CNN
+F 3 "" H 6550 1300 50  0001 C CNN
+	1    6550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1400 6300 1400
+Wire Wire Line
+	6200 1550 6300 1550
+Wire Wire Line
+	6500 1550 6550 1550
+Wire Wire Line
+	6550 1550 6550 1400
+Wire Wire Line
+	6500 1400 6550 1400
+Connection ~ 6550 1400
+Wire Wire Line
+	6550 1400 6550 1300
 $EndSCHEMATC
